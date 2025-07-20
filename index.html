@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIP SIM & Number Services - Mukesh Kumar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #2a2f4f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #2a2f4f;
+    }
+
+    .contact-info {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    .contact-info p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .contact-form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background-color: #2a2f4f;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #3d4270;
+    }
+
+    .thank-you {
+      display: none;
+      margin-top: 20px;
+      color: green;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      background: #2a2f4f;
+      color: white;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>VIP SIM & Number Services - Mukesh Kumar</h1>
+  </header>
+
+  <main>
+    <section class="contact-info">
+      <h2 class="section-title">Contact Us</h2>
+      <p><strong>Email:</strong> <a href="mailto:vipnumberdealspunjab@gmail.com">vipnumberdealspunjab@gmail.com</a></p>
+      <p>For any queries regarding VIP mobile numbers, feel free to contact us using the email or form below.</p>
+    </section>
+
+    <section class="contact-form-section">
+      <h2 class="section-title">Send Your Query</h2>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+        <div class="thank-you" id="thankYouMsg">Thank you! Your message has been submitted.</div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 VIP Number Services | Mukesh Kumar</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.querySelector('.contact-form').reset();
+      document.getElementById('thankYouMsg').style.display = 'block';
+    }
+  </script>
+</body>
+
+</html>
