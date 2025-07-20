@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VIP SIM & Number Services - Mukesh Kumar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: #fff; overflow-x: hidden; }
+
+    header { background: #000; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+    header h1 { font-size: 1.8rem; color: #fdbb2d; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+    nav a:hover { color: #fdbb2d; }
+
+    .hero { padding: 80px 30px; text-align: center; animation: fadeIn 1.5s ease-in-out; background: #1f3b64; }
+    .hero h2 { font-size: 2.5rem; color: #fdbb2d; }
+    .hero p { margin-top: 15px; font-size: 1.2rem; color: #e0e0e0; }
+
+    .services, .vip-list { padding: 60px 30px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; background: #1a2a4f; }
+    .card { background: rgba(255, 255, 255, 0.07); border-radius: 12px; padding: 25px; text-align: center; transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card h3 { color: #fdbb2d; margin-bottom: 10px; }
+    .card p { font-size: 1rem; color: #d0d0d0; }
+    .card i { font-size: 40px; margin-bottom: 10px; color: #ffffff; }
+
+    .cta { text-align: center; padding: 60px 30px; background: #162a4d; }
+    .cta h2 { font-size: 2rem; margin-bottom: 20px; color: #fdbb2d; }
+    .cta a { display: inline-block; padding: 12px 25px; background: #25d366; color: #fff; text-decoration: none; border-radius: 25px; transition: background 0.3s ease; font-weight: bold; }
+    .cta a:hover { background: #1ebf54; }
+
+    .cta form { max-width: 500px; margin: 30px auto 0 auto; background: rgba(255, 255, 255, 0.08); padding: 25px; border-radius: 12px; }
+    .cta form input, .cta form textarea {
+      width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: none; font-size: 1rem;
+    }
+    .cta form button {
+      background-color: #25d366; color: #fff; border: none; padding: 12px 25px; border-radius: 25px;
+      cursor: pointer; font-weight: bold; font-size: 1rem;
+    }
+    .cta form button:hover { background-color: #1ebf54; }
+    #form-msg {
+      display: none;
+      margin-top: 20px;
+      color: #00ff99;
+      font-weight: 500;
+    }
+
+    footer { padding: 20px; text-align: center; background: #000000; color: #aaa; }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.4rem; }
+      .hero h2 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><i class="fas fa-sim-card"></i> Mukesh VIP SIM Services</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#vip">VIP Numbers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>क्या आपको VIP Mobile Number चाहिए?</h2>
+    <p>VIP Numbers, SIM Porting, Activation — सब कुछ घर बैठे! Online Payment और Fast Delivery के साथ।</p>
+    <p style="margin-top: 10px; color: #ccc;"><strong>📦 Jalandhar में Home Delivery उपलब्ध | अन्य स्थानों के लिए Online Services</strong></p>
+  </section>
+
+  <section class="services" id="services">
+    <div class="card">
+      <i class="fas fa-star"></i>
+      <h3>VIP Number Selection</h3>
+      <p>Business या Personal use के लिए प्रीमियम नंबर।</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-signal"></i>
+      <h3>New SIM Activation</h3>
+      <p>Fast, hassle-free activation with home delivery.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-exchange-alt"></i>
+      <h3>SIM Porting</h3>
+      <p>Number बदले बिना नया नेटवर्क – आसान और तेज़!</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-tags"></i>
+      <h3>Discount Offers</h3>
+      <p>हर सेवा पर मिलेगा शानदार डिस्काउंट और डील्स।</p>
+    </div>
+  </section>
+
+  <section class="vip-list" id="vip">
+    <div class="card">
+      <h3>📱 98765-43210</h3>
+      <p>Gold VIP Number - ₹4999</p>
+    </div>
+    <div class="card">
+      <h3>📱 90000-00009</h3>
+      <p>Super Premium - ₹9999</p>
+    </div>
+    <div class="card">
+      <h3>📱 88888-88888</h3>
+      <p>Platinum Combo - ₹19999</p>
+    </div>
+    <div class="card">
+      <h3>📱 77777-00000</h3>
+      <p>Lucky Series - ₹5999</p>
+    </div>
+    <div class="card">
+      <h3>📱 78600-78600</h3>
+      <p>786 Religious - ₹7999</p>
+    </div>
+    <div class="card">
+      <h3>📱 99999-12345</h3>
+      <p>Numeric Pattern - ₹8999</p>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <h2>आज ही संपर्क करें और VIP Number पाएं!</h2>
+    <a href="https://wa.me/918400001683?text=Mujhe%20VIP%20Number%20ki%20details%20chahiye">WhatsApp करें</a>
+
+    <p style="margin-top: 15px; color: #ccc;">📍 Location: Jalandhar | 📞 Call: 
+      <a style="color: #fff;" href="tel:+918400001683">8400001683</a></p>
+    <p style="margin-top: 10px; color: #ccc;">📧 Email: 
+      <a href="mailto:vipnumberdealspunjab@gmail.com" style="color:#fff;">vipnumberdealspunjab@gmail.com</a></p>
+    <p style="margin-top: 10px; color: #ccc;">💳 Online Payment Available | 🚚 Home Delivery in Jalandhar</p>
+
+    <form id="contact-form" action="https://formspree.io/f/xovljdka" method="POST">
+      <input type="text" name="name" placeholder="आपका नाम" required>
+      <input type="tel" name="phone" placeholder="फोन नंबर" required>
+      <textarea name="message" rows="4" placeholder="संदेश / क्वेरी" required></textarea>
+      <button type="submit">भेजें</button>
+      <p id="form-msg">✅ Thank You! आपका फॉर्म सफलतापूर्वक जमा हो गया है।</p>
+    </form>
+  </section>
+
+  <a href="https://wa.me/918400001683" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="Chat on WhatsApp" style="width: 55px; height: 55px;">
+  </a>
+
+  <footer>
+    &copy; 2025 Mukesh Kumar VIP SIM Services. सभी अधिकार सुरक्षित।
+  </footer>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const msg = document.getElementById('form-msg');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        if (response.ok) {
+          msg.style.display = 'block';
+          msg.style.color = '#00ff99';
+          form.reset();
+        } else {
+          msg.textContent = '❌ कुछ गलत हो गया है। कृपया बाद में प्रयास करें।';
+          msg.style.color = '#ff4f4f';
+          msg.style.display = 'block';
+        }
+      } catch (error) {
+        msg.textContent = '❌ Server error. कृपया बाद में प्रयास करें।';
+        msg.style.color = '#ff4f4f';
+        msg.style.display = 'block';
+      }
+    });
+  </script>
+
+</body>
+</html>
